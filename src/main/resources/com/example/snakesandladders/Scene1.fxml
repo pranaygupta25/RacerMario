@@ -15,12 +15,7 @@
             <Image url="@../../../img/screens/entryScreen.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="158.0" fitWidth="150.0" layoutX="200.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../img/screens/icon.png" />
-         </image>
-      </ImageView>
-      <Button fx:id="clicktoplay" alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="199.0" layoutY="434.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: transparent;" text="Play Game" textAlignment="CENTER" textFill="#595751">
+      <Button fx:id="clicktoplay" alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="199.0" layoutY="434.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: transparent;" text="Play Game" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Arial Black" size="14.0" />
          </font>

@@ -44,16 +44,8 @@
             <Image url="@../../../img/gameBoard/singleArrow.gif" />
          </image>
       </ImageView>
-      <ImageView fx:id="player1token" fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="530.0" onMouseClicked="#moveToken1" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../img/playerTokens/player1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player2token" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#moveToken2" pickOnBounds="true" preserveRatio="true" x="25.0" y="530.0">
-         <image>
-            <Image url="@../../../img/playerTokens/player2.png" />
-         </image>
-      </ImageView>
+      <ImageView fx:id="player1token" fitHeight="100.0" fitWidth="100.0" layoutX="25.0" layoutY="430.0" onMouseClicked="#moveToken1" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player2token" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#moveToken2" pickOnBounds="true" preserveRatio="true" x="25.0" y="430.0" />
       <ImageView fx:id="playerOverlay" fitHeight="56.0" fitWidth="163.0" layoutX="315.0" layoutY="587.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../img/gameBoard/playerOverlay.png" />
