@@ -15,7 +15,7 @@ public class GameApplication extends Application {
         // New scene initialization
         Scene scene = new Scene(fxmlLoader.load());
         // Application Name Configuration
-        stage.setTitle("Snakes and Ladders | CSE201 Project");
+        stage.setTitle("Mario Racer");
         // Application Window Resize
         stage.setResizable(false);
         // Setting up the current scene to the stage

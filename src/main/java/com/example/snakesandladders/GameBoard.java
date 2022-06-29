@@ -3,6 +3,7 @@ package com.example.snakesandladders;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.image.Image;
 
 public class GameBoard {
 
@@ -18,16 +19,16 @@ public class GameBoard {
 
     public GameBoard(ImageView player1mover, ImageView player1token, ImageView player2mover, ImageView player2token,
                      Button diceButton, ImageView diceHolder) {
-        int[][] ladders = {{2, 23}, {8, 12}, {17, 93}, {29, 54}, {32, 51}, {39, 80}, {62, 78}, {70, 89}, {75, 96}};
+        int[][] ladders = {{2, 9}, {13, 22}};
         Ladder ladders1 = new Ladder(ladders);
-        int[][] snakes = {{99, 4}, {92, 76}, {83, 80}, {69, 50}, {59, 37}, {41, 19}, {31, 14}};
+        int[][] snakes = {{24, 7}, {17, 7}, {14, 7}, {8, 3}, {19, 12}};
         Snake snakes1 = new Snake(snakes);
         this.powerElements = new PowerElement[2];
         this.powerElements[0] = snakes1;
         this.powerElements[1] = ladders1;
         this.players = new Player[2];
-        this.players[0] = new Player(player1mover, player1token);
-        this.players[1] = new Player(player2mover, player2token);
+        this.players[0] = new Player(player1mover, player1token, 1);
+        this.players[1] = new Player(player2mover, player2token, 2);
         this.dice = new Dice(diceButton, diceHolder);
     }
 
@@ -47,7 +48,7 @@ public class GameBoard {
 
     private int checkForSpecialTiles(int player) {
         int currentPlayerPosition = this.players[player-1].getCurrentPosition();
-        if (currentPlayerPosition == 100)
+        if (currentPlayerPosition == 25)
             return 1;
         for (PowerElement element: this.powerElements) {
             if(checkForSnakesAndLadders(player, currentPlayerPosition, element))
@@ -68,7 +69,7 @@ public class GameBoard {
 
     public void rollDice(int player) {
         int dieRoll = dice.roll();
-        if (this.players[player-1].getCurrentPosition() + dieRoll > 100)
+        if (this.players[player-1].getCurrentPosition() + dieRoll > 25)
             return;
         this.players[player-1].setCurrentDieRoll(dieRoll);
         if (dieRoll == 1)

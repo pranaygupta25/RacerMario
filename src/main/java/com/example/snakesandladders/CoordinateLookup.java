@@ -4,7 +4,7 @@ public class CoordinateLookup {
 
     // -----------------------------------------------------------------------------------------------------------------
 
-    static private int getX(int current){
+    /*static private int getX(int current){
         int res = 0;
         switch (current){
             case  1, 20, 21, 40, 41, 60, 61, 80, 81, 100 -> res = 0;
@@ -34,6 +34,30 @@ public class CoordinateLookup {
             case 71, 72, 73, 74, 75, 76, 77, 78, 79, 80  -> res = -400;
             case 81, 82, 83, 84, 85, 86, 87, 88, 89, 90  -> res = -450;
             case 91, 92, 93, 94, 95, 96, 97, 98, 99, 100 -> res = -500;
+        }
+        return res;
+    }*/
+
+    static private int getX(int current){
+        int res = 0;
+        switch (current){
+            case 1, 10, 11, 20, 21 -> res = 0;
+            case 2,  9, 12, 19, 22 -> res = 100;
+            case 3,  8, 13, 18, 23 -> res = 200;
+            case 4,  7, 14, 17, 24 -> res = 300;
+            case 5,  6, 15, 16, 25 -> res = 400;
+        }
+        return res;
+    }
+
+    static private int getY(int current){
+        int res = 0;
+        switch (current){
+            case  1,  2,  3,  4,  5 -> res = -0;
+            case 10,  9,  8,  7,  6 -> res = -100;
+            case 11, 12, 13, 14, 15 -> res = -200;
+            case 20, 19, 18, 17, 16 -> res = -300;
+            case 21, 22, 23, 24, 25 -> res = -400;
         }
         return res;
     }
