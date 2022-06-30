@@ -11,4 +11,4 @@
 ### <i> Reach the top-right (↗) tile  first and you win! </i> 🥳
 
 ## Video Demo of the Game
-[![Game Screenshot](./screenshots/Mid%20Game%20Screen.png)](./screenshots/RacerMarioDemo.mp4)
+[![Game Screenshot](./screenshots/Mid%20Game%20Screen.png)](https://drive.google.com/file/d/1QC7js2dHGuoNSJpm85-e49BsCX7D83e3/view?usp=sharing)
